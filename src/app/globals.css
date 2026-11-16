@@ -1,0 +1,447 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f5f7;
+  color: #252525;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  background: #7546a6;
+  color: white;
+  padding: 20px 0;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+
+/* =========================
+   INTRODUÇÃO
+========================= */
+
+.page-intro {
+  margin-bottom: 35px;
+}
+
+.section-label {
+  color: #7546a6;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.page-intro h1 {
+  font-size: 36px;
+  margin: 12px 0;
+}
+
+.page-intro p {
+  color: #777;
+  line-height: 1.6;
+}
+
+.total-cats {
+  display: inline-block;
+  margin-top: 18px;
+
+  color: #7546a6;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+/* =========================
+   GRID DE GATOS
+========================= */
+
+.cat-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 22px;
+}
+
+
+/* =========================
+   CARD DE GATO
+========================= */
+
+.cat-card {
+  background: white;
+
+  border-radius: 14px;
+  padding: 18px;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+
+  transition: 0.2s;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.cat-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.cat-image {
+  background: #efebf5;
+
+  border-radius: 12px;
+
+  height: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 15px;
+
+  overflow: hidden;
+}
+
+.cat-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  transition: 0.2s;
+}
+
+.cat-card:hover .cat-image img {
+  transform: scale(1.05);
+}
+
+.cat-image span {
+  font-size: 60px;
+}
+
+.cat-info h2 {
+  font-size: 20px;
+  margin: 8px 0;
+
+  text-transform: capitalize;
+}
+
+.cat-info p {
+  color: #777;
+  font-size: 14px;
+
+  margin-bottom: 12px;
+}
+
+.cat-id {
+  font-size: 12px;
+  color: #999;
+  font-weight: bold;
+}
+
+.cat-lifespan {
+  display: block;
+
+  font-size: 12px;
+  color: #7546a6;
+
+  font-weight: bold;
+}
+
+
+/* =========================
+   BOTÃO VOLTAR
+========================= */
+
+.back-button {
+  display: inline-block;
+
+  background: #7546a6;
+  color: white;
+
+  padding: 12px 20px;
+
+  border-radius: 8px;
+
+  font-weight: bold;
+
+  margin-bottom: 25px;
+
+  transition: 0.2s;
+}
+
+.back-button:hover {
+  background: #56317f;
+}
+
+
+/* =========================
+   DETALHES DA RAÇA
+========================= */
+
+.details-container {
+  width: 100%;
+}
+
+.details-hero {
+  background: white;
+
+  border-radius: 16px;
+
+  padding: 30px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1.3fr;
+
+  gap: 35px;
+
+  align-items: center;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.details-image {
+  background: #efebf5;
+
+  border-radius: 14px;
+
+  min-height: 350px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.details-image img {
+  width: 100%;
+  height: 350px;
+
+  object-fit: cover;
+}
+
+.details-image span {
+  font-size: 90px;
+}
+
+.breed-id {
+  color: #999;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.details-main h1 {
+  font-size: 40px;
+
+  text-transform: capitalize;
+
+  margin: 12px 0 25px;
+}
+
+
+/* =========================
+   INFORMAÇÕES BÁSICAS
+========================= */
+
+.basic-info {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 12px;
+
+  margin: 25px 0;
+}
+
+.basic-info div {
+  background: #f4f1f8;
+
+  padding: 14px;
+
+  border-radius: 10px;
+}
+
+.basic-info span {
+  display: block;
+
+  color: #888;
+
+  font-size: 12px;
+
+  margin-bottom: 8px;
+}
+
+.basic-info strong {
+  font-size: 14px;
+
+  text-transform: capitalize;
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================
+   DESCRIÇÃO E TEMPERAMENTO
+========================= */
+
+.description,
+.temperament,
+.history {
+  margin-top: 25px;
+  line-height: 1.7;
+}
+
+.description h2,
+.temperament h2,
+.history h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.description p,
+.temperament p,
+.history p {
+  color: #666;
+  font-size: 14px;
+}
+
+
+/* =========================
+   ERROS E NOT FOUND
+========================= */
+
+.error-message,
+.not-found {
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 14px;
+
+  text-align: center;
+}
+
+.error-message h2,
+.not-found h1 {
+  margin-bottom: 15px;
+}
+
+.error-message p,
+.not-found p {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 900px) {
+
+  .cat-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .details-hero {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  .cat-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .container {
+    padding: 25px 15px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .page-intro h1 {
+    font-size: 27px;
+  }
+
+  .cat-image {
+    height: 140px;
+  }
+
+  .details-hero {
+    padding: 18px;
+  }
+
+  .details-image {
+    min-height: 250px;
+  }
+
+  .details-image img {
+    height: 250px;
+  }
+
+  .details-main h1 {
+    font-size: 32px;
+  }
+
+  .basic-info {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 380px) {
+
+  .cat-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
